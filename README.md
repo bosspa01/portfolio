@@ -35,9 +35,9 @@
 | --- | --- | --- |
 | Gaming Gear | เว็บขายอุปกรณ์เกมมิ่ง มีหน้าร้านและ API หลังบ้าน | [หน้าบ้าน](https://github.com/bosspa01/ecom-web) · [หลังบ้าน](https://github.com/bosspa01/ecom-api) |
 | Solar AI | แชตบอทถามตอบเรื่องพลังงานแสงอาทิตย์ โดยค้นข้อมูลจากเอกสาร | [ดูโค้ด](https://github.com/bosspa01/solar-chat) |
-| Anime Buddy | บอท Discord แนะนำอนิเมะ | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/ai-anime-discord-bot) |
+| Anime Discord Bot | บอท Discord แนะนำอนิเมะ | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/ai-anime-discord-bot) |
 | Voice to Clarity | บอท LINE ถอดเสียงและสรุปการประชุม | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/line-meeting-summarizer) |
-| Food Flow | เว็บสั่งอาหารสำหรับลูกค้า ร้านค้า ไรเดอร์ และผู้ดูแลระบบ | [ดูโค้ด](https://github.com/bosspa01/FoodApp) |
+| Food Delivery App | เว็บสั่งอาหารสำหรับลูกค้า ร้านค้า ไรเดอร์ และผู้ดูแลระบบ | [ดูโค้ด](https://github.com/bosspa01/FoodApp) |
 
 โปรเจกต์ที่ Fork มาจากผู้อื่นมีหมายเหตุและลิงก์ต้นฉบับในเว็บไซต์ ส่วนโปรเจกต์ที่ยังไม่ใส่ภาพหน้าจอจะใช้ภาพประกอบพร้อมข้อความกำกับ
 
@@ -58,89 +58,6 @@ backend/
   config/            ตั้งค่าการเชื่อมต่อ SMTP
   utils/             ตรวจข้อมูลและแปลงอักขระสำหรับ HTML
 ```
-
-## วิธีเปิดในเครื่อง
-
-ใช้ **Node.js 24 LTS** และ npm โดยติดตั้งแพ็กเกจของหน้าบ้านกับหลังบ้านแยกกัน
-
-### 1. เปิดหลังบ้าน
-
-เปิด Terminal ในโฟลเดอร์โปรเจกต์ แล้วใช้คำสั่ง:
-
-```powershell
-cd backend
-npm ci
-# คัดลอกเฉพาะกรณีที่ยังไม่มี .env เพื่อไม่ทับค่าที่ตั้งไว้เดิม
-if (-not (Test-Path .env)) { Copy-Item .env.example .env }
-# ตั้งค่า SMTP ใน .env ก่อนใช้ฟอร์มส่งอีเมล
-npm run dev
-```
-
-### 2. เปิดหน้าบ้าน
-
-เปิด Terminal อีกหน้าต่างในโฟลเดอร์โปรเจกต์ แล้วใช้คำสั่ง:
-
-```powershell
-cd frontend
-npm ci
-npm run dev
-```
-
-เข้าเว็บไซต์ที่ [localhost:3000](http://localhost:3000) และตรวจว่าหลังบ้านทำงานที่ [localhost:4000/api/health](http://localhost:4000/api/health)
-
-สำหรับ Windows สามารถเปิดผ่าน `START_FRONTEND_WINDOWS.bat` และ `START_BACKEND_WINDOWS.bat` ได้เช่นกัน
-
-## ค่าที่ต้องตั้งในไฟล์ .env
-
-| ส่วน | ตัวแปร | หน้าที่ |
-| --- | --- | --- |
-| หน้าบ้าน | `API_URL` | ที่อยู่หลังบ้านสำหรับส่งต่อ `/api` ค่าเริ่มต้นในเครื่องคือ `http://localhost:4000` |
-| หลังบ้าน | `PORT` | พอร์ตของเซิร์ฟเวอร์ เมื่อออนไลน์ใช้ค่าที่โฮสต์กำหนด |
-| หลังบ้าน | `FRONTEND_ORIGINS` | ที่อยู่หน้าบ้านที่อนุญาตให้เรียก API หลายค่าคั่นด้วย comma |
-| หลังบ้าน | `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE` | ตั้งค่าการเชื่อมต่อบริการส่งอีเมล |
-| หลังบ้าน | `SMTP_USER`, `SMTP_PASS` | บัญชีและรหัสสำหรับส่งอีเมล เก็บไว้เฉพาะในเครื่องหรือระบบเก็บค่าลับของโฮสต์ |
-| หลังบ้าน | `CONTACT_TO_EMAIL` | อีเมลปลายทางสำหรับรับข้อความ |
-| หลังบ้าน | `TRUST_PROXY` | ตั้งเป็น `1` เฉพาะเมื่ออยู่หลัง reverse proxy ที่เชื่อถือได้หนึ่งชั้น |
-
-หน้าบ้านเรียก `/api/contact` แล้ว Next.js ส่งคำขอต่อไปยังหลังบ้าน เมื่อนำขึ้นออนไลน์ต้องตั้ง `API_URL` เป็นที่อยู่ HTTPS ของหลังบ้านจริง ส่วนค่ารหัส SMTP ตั้งเฉพาะหลังบ้าน ไม่ใส่ในโค้ดหน้าบ้านหรือ GitHub
-
-หากยังไม่ได้ตั้งค่า SMTP หรือส่งอีเมลไม่สำเร็จ ฟอร์มจะแจ้งปัญหาและมีลิงก์อีเมลให้ใช้แทน
-
-## ตรวจสอบก่อนนำขึ้นออนไลน์
-
-รันในโฟลเดอร์หน้าบ้าน:
-
-```powershell
-cd frontend
-npm ci
-npm run build
-npm start
-```
-
-ตรวจช่องโหว่ของแพ็กเกจที่ใช้จริง โดยรันคำสั่งนี้แยกในโฟลเดอร์ `frontend` และ `backend`:
-
-```powershell
-npm audit --omit=dev
-```
-
-อ่าน [คู่มือนำเว็บขึ้นออนไลน์](DEPLOYMENT.md) สำหรับการตั้งค่าหน้าบ้านบน Vercel หลังบ้านบน Render และรายการตรวจสอบ การพุชโค้ดขึ้น GitHub กับการเผยแพร่เว็บเป็นคนละขั้นตอน
-
-## จุดที่แก้ข้อมูลและรูปภาพ
-
-- ข้อมูลส่วนตัว: `frontend/src/data/profile.js`
-- รายละเอียดผลงาน: `frontend/src/data/projects/`
-- ข้อความไทยและอังกฤษ: `frontend/src/data/languages/`
-- ภาพผลงานจริง: `frontend/public/project-shots/`
-- รายการภาพที่แสดงในเว็บ: `frontend/src/data/project-shots.json`
-
-ก่อนเผยแพร่ภาพ ควรตรวจว่าไม่มีรหัสผ่าน ข้อมูลบัญชี หรือบทสนทนาส่วนตัวติดมาในภาพ
-
-## เอกสารเพิ่มเติม
-
-- [คู่มือติดตั้งและโครงสร้างเบื้องต้น](README_TH.md)
-- [คู่มือเริ่มอ่านโค้ด](GUIDE_FOR_BEGINNERS_TH.md)
-- [คำอธิบายโค้ดและโครงสร้างทุกส่วน](CODE_GUIDE_TH.md)
-- [คู่มือนำเว็บขึ้นออนไลน์](DEPLOYMENT.md)
 
 ## ผู้พัฒนา
 

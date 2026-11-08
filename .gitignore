@@ -11,3 +11,9 @@ test-results/
 *.tsbuildinfo
 .DS_Store
 Thumbs.db
+
+# คู่มือสำหรับอ่านในเครื่อง ไม่เผยแพร่บน GitHub
+/CODE_GUIDE_TH.md
+/DEPLOYMENT.md
+/GUIDE_FOR_BEGINNERS_TH.md
+/README_TH.md
