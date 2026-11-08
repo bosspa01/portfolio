@@ -41,7 +41,7 @@
 | Voice to Clarity | บอท LINE ถอดเสียงและสรุปการประชุม (งานกลุ่มร่วมกับเพื่อน) | [ดูโค้ด](https://github.com/bosspa01/line-meeting-summarizer) |
 | Food Delivery App | เว็บสั่งอาหารสำหรับลูกค้า ร้านค้า ไรเดอร์ และผู้ดูแลระบบ | [ดูโค้ด](https://github.com/bosspa01/FoodApp) |
 
-Anime Discord Bot และ Voice to Clarity เป็นงานกลุ่มที่พัฒนาร่วมกับเพื่อน โดย repository ในบัญชีนี้ Fork มาจาก repository ของทีม และมีลิงก์ของทีมอยู่ในเว็บไซต์ ส่วนโปรเจกต์ที่ยังไม่ใส่ภาพหน้าจอจะใช้ภาพประกอบพร้อมข้อความกำกับ
+Anime Discord Bot และ Voice to Clarity เป็นงานกลุ่มที่พัฒนาร่วมกับเพื่อน โดย repository ในบัญชีนี้ Fork มาจาก repository ของทีม และมีลิงก์ของทีมอยู่ในเว็บไซต์
 
 ## โครงสร้างโปรเจกต์
 
