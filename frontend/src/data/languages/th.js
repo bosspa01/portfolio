@@ -74,6 +74,7 @@ export const th = {
   visualNote: "ภาพประกอบดีไซน์ (ยังไม่ใช่ Screenshot ของโปรเจกต์)",
   screenshotNote: "ภาพหน้าจอโปรเจกต์จริง",
   sourceNote: "รายละเอียดตรวจสอบจาก Repository สาธารณะบน GitHub",
-  forkNote: "Repository นี้เป็น Fork — คลิกดูต้นฉบับได้",
-  upstream: "ต้นฉบับ",
+  groupProject: "งานกลุ่ม",
+  groupNote: "พัฒนาร่วมกับเพื่อน",
+  teamRepository: "Repository ของทีม",
 };

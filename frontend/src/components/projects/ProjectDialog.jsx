@@ -87,15 +87,15 @@ const ProjectDialog = ({ project, lang, onClose }) => {
               </div>
               <div className="project-repo-info">
                 <span>{translations[lang].sourceNote}</span>
-                {project.forked && (
+                {project.groupProject && (
                   <p>
-                    <strong>FORK</strong> · {translations[lang].forkNote}{" "}
+                    <strong>{translations[lang].groupProject}</strong> · {translations[lang].groupNote}{" "}
                     <a
                       href={project.upstream}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {translations[lang].upstream} ↗
+                      {translations[lang].teamRepository} ↗
                     </a>
                   </p>
                 )}

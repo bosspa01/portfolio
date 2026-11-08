@@ -75,6 +75,7 @@ export const en = {
   visualNote: "Concept artwork (not an actual project screenshot)",
   screenshotNote: "Real project screenshots",
   sourceNote: "Details verified against public GitHub repositories",
-  forkNote: "This repository is a fork — see the original project",
-  upstream: "Upstream source",
+  groupProject: "GROUP PROJECT",
+  groupNote: "Developed together with friends",
+  teamRepository: "Team repository",
 };

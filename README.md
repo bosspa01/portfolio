@@ -35,11 +35,11 @@
 | --- | --- | --- |
 | Gaming Gear | เว็บขายอุปกรณ์เกมมิ่ง มีหน้าร้านและ API หลังบ้าน | [หน้าบ้าน](https://github.com/bosspa01/ecom-web) · [หลังบ้าน](https://github.com/bosspa01/ecom-api) |
 | Solar AI | แชตบอทถามตอบเรื่องพลังงานแสงอาทิตย์ โดยค้นข้อมูลจากเอกสาร | [ดูโค้ด](https://github.com/bosspa01/solar-chat) |
-| Anime Discord Bot | บอท Discord แนะนำอนิเมะ | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/ai-anime-discord-bot) |
-| Voice to Clarity | บอท LINE ถอดเสียงและสรุปการประชุม | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/line-meeting-summarizer) |
+| Anime Discord Bot | บอท Discord แนะนำอนิเมะ (งานกลุ่มร่วมกับเพื่อน) | [ดูโค้ด](https://github.com/bosspa01/ai-anime-discord-bot) |
+| Voice to Clarity | บอท LINE ถอดเสียงและสรุปการประชุม (งานกลุ่มร่วมกับเพื่อน) | [ดูโค้ด](https://github.com/bosspa01/line-meeting-summarizer) |
 | Food Delivery App | เว็บสั่งอาหารสำหรับลูกค้า ร้านค้า ไรเดอร์ และผู้ดูแลระบบ | [ดูโค้ด](https://github.com/bosspa01/FoodApp) |
 
-โปรเจกต์ที่ Fork มาจากผู้อื่นมีหมายเหตุและลิงก์ต้นฉบับในเว็บไซต์ ส่วนโปรเจกต์ที่ยังไม่ใส่ภาพหน้าจอจะใช้ภาพประกอบพร้อมข้อความกำกับ
+Anime Discord Bot และ Voice to Clarity เป็นงานกลุ่มที่พัฒนาร่วมกับเพื่อน โดย repository ในบัญชีนี้ Fork มาจาก repository ของทีม และมีลิงก์ของทีมอยู่ในเว็บไซต์ ส่วนโปรเจกต์ที่ยังไม่ใส่ภาพหน้าจอจะใช้ภาพประกอบพร้อมข้อความกำกับ
 
 ## โครงสร้างโปรเจกต์
 

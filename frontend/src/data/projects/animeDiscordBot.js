@@ -11,8 +11,8 @@ export const animeDiscordBot = {
     en: "A Discord anime recommender that understands natural language.",
   },
   detail: {
-    th: "บอท Discord รับคำค้นจากภาษาไทยหรืออังกฤษ เช่น “ต่างโลก” หรือ “แฟนตาซีจบไว คะแนนสูง” ดึงข้อมูลจาก MyAnimeList API v2 แล้วแสดงคำแนะนำพร้อมรูปโปสเตอร์ คะแนน จำนวนตอน และประเภท รองรับทั้งคำสั่ง !anime และการพิมพ์ข้อความปกติ Repository นี้เป็น Fork จาก monmon1123",
-    en: "A Discord bot that understands Thai or English anime requests, queries MyAnimeList API v2, and returns recommendation embeds with posters, scores, episode counts and genres. Supports !anime commands and natural conversation. This repository is a fork of monmon1123’s project.",
+    th: "บอท Discord รับคำค้นจากภาษาไทยหรืออังกฤษ เช่น “ต่างโลก” หรือ “แฟนตาซีจบไว คะแนนสูง” ดึงข้อมูลจาก MyAnimeList API v2 แล้วแสดงคำแนะนำพร้อมรูปโปสเตอร์ คะแนน จำนวนตอน และประเภท รองรับทั้งคำสั่ง !anime และการพิมพ์ข้อความปกติ โปรเจกต์งานกลุ่มที่พัฒนาร่วมกับเพื่อน โดย repository นี้ Fork มาจาก repository ของทีม",
+    en: "A Discord bot that understands Thai or English anime requests, queries MyAnimeList API v2, and returns recommendation embeds with posters, scores, episode counts and genres. Supports !anime commands and natural conversation. A group project developed with friends; this repository is forked from the team repository.",
   },
   features: {
     th: [
@@ -31,11 +31,12 @@ export const animeDiscordBot = {
     ],
   },
   stack: ["Python", "discord.py", "FastAPI", "MyAnimeList API", "httpx"],
+  groupProject: true,
   forked: true,
   upstream: "https://github.com/monmon1123/ai-anime-discord-bot",
   links: [
     {
-      label: "GITHUB FORK",
+      label: "GITHUB",
       url: "https://github.com/bosspa01/ai-anime-discord-bot",
       kind: "code",
     },

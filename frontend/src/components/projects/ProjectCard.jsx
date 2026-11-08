@@ -25,7 +25,7 @@ const ProjectCard = ({ project, onOpen, lang }) => {
         <div className="project-meta">
           <span>
             {project.number} / {project.type}
-            {project.forked ? " / FORK" : ""}
+            {project.groupProject ? (lang === "th" ? " / งานกลุ่ม" : " / GROUP PROJECT") : ""}
           </span>
           <span className="project-line" />
         </div>
