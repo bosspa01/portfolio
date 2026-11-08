@@ -4,8 +4,6 @@ node_modules/
 .env.*
 .vercel/
 coverage/
-playwright-report/
-test-results/
 *.log
 *.tsbuildinfo
 .DS_Store

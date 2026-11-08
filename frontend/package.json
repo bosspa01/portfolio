@@ -5,20 +5,14 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start -p 3000",
-    "capture:ecom": "node scripts/capture-project.mjs",
-    "capture:project": "node scripts/capture-project.mjs",
-    "screenshots:install": "playwright install chromium"
+    "start": "next start -p 3000"
   },
   "dependencies": {
+    "lucide-react": "^0.468.0",
+    "motion": "^12.0.0",
     "next": "^16.0.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "motion": "^12.0.0",
-    "lucide-react": "^0.468.0"
-  },
-  "devDependencies": {
-    "playwright": "^1.58.0"
+    "react-dom": "^19.2.0"
   },
   "engines": {
     "node": ">=20.9.0"
