@@ -1,84 +1,84 @@
 # BOSS Portfolio
 
-Personal portfolio of **Rapeephat Phaphan (Boss)** — a Computer Science and Software Development Innovation student at Sripatum University, focused on full-stack web development and AI applications.
+เว็บไซต์รวบรวมผลงานของ **Rapeephat Phaphan (บอส)** นักศึกษาสาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ มหาวิทยาลัยศรีปทุม สนใจการพัฒนาเว็บทั้งหน้าบ้านและหลังบ้าน รวมถึงการนำ AI มาใช้ในโปรเจกต์
 
-Built with **Next.js, React and JavaScript**, with a separate **Express API** for contact enquiries. The interface combines a dark blue visual identity, animated sections, bilingual content and real project screenshots.
+พัฒนาด้วย **Next.js, React และ JavaScript** แยกส่วนรับข้อความติดต่อเป็น **API ด้วย Express** ใช้ธีมสีดำ–น้ำเงิน มีแอนิเมชัน ข้อมูลสองภาษา และภาพหน้าจอของผลงานจริง
 
-![BOSS Portfolio project showcase](frontend/public/project-shots/gaming-store/gaming-home.png)
+## สิ่งที่เว็บไซต์ทำได้
 
-*Screenshot of Gaming Gear, one of the projects featured in this portfolio.*
+- แนะนำตัว แสดงประวัติการศึกษา ทักษะ ผลงาน และช่องทางติดต่อ
+- สลับข้อความภาษาไทยและภาษาอังกฤษได้
+- ปรับการแสดงผลตามขนาดหน้าจอ ทั้งคอมพิวเตอร์และมือถือ
+- กรองผลงานตามหมวด Full-stack และ AI / Bots
+- เปิดดูรายละเอียด เทคโนโลยี ภาพหน้าจอ และลิงก์โค้ดของแต่ละผลงาน
+- มีเมนูสำหรับมือถือและรองรับการตั้งค่าลดแอนิเมชันของผู้ใช้
+- ส่งข้อความผ่านฟอร์มติดต่อทางอีเมล โดยตรวจข้อมูลและจำกัดความถี่ก่อนส่ง
+- มีลิงก์อีเมลโดยตรงและ GitHub เป็นช่องทางติดต่อเพิ่มเติม
 
-## Features
+## เทคโนโลยีที่ใช้พัฒนาเว็บนี้
 
-- Thai and English content with an in-page language switch.
-- Responsive sections for introduction, background, projects, skills, education and contact.
-- Project filtering for full-stack applications and AI/bot projects.
-- Project dialogs with screenshot galleries, technology stacks and source links.
-- Motion animations, mobile navigation and reduced-motion support.
-- SMTP contact form with server-side validation, HTML escaping, a honeypot field and request rate limiting.
-- Direct email and GitHub links as alternative contact channels.
-
-## Technology
-
-| Layer | Technologies |
+| ส่วนของระบบ | เทคโนโลยี |
 | --- | --- |
-| Frontend | Next.js 16 App Router, React 19, JavaScript / JSX |
-| Styling | CSS, responsive media queries, Google Fonts |
-| Animation and icons | Motion, Lucide React |
-| API | Node.js, Express 5 |
-| Email | Nodemailer over SMTP |
-| API protections | Helmet, CORS, express-rate-limit, input validation |
-| Screenshot tooling | Playwright |
+| หน้าบ้าน | Next.js 16 App Router, React 19, JavaScript / JSX |
+| การจัดหน้าตา | CSS, Media Queries สำหรับขนาดหน้าจอต่าง ๆ, Google Fonts |
+| แอนิเมชันและไอคอน | Motion, Lucide React |
+| หลังบ้าน | Node.js, Express 5 |
+| การส่งอีเมล | Nodemailer ผ่าน SMTP |
+| การตรวจและจำกัดคำขอ | Helmet, CORS, express-rate-limit และการตรวจข้อมูลในโค้ด |
+| เครื่องมือจับภาพหน้าจอ | Playwright |
 
-Content is maintained in local data files; the portfolio itself does not require a database. The featured applications have their own repositories and infrastructure.
+ข้อมูลของพอร์ตเก็บในไฟล์ภายในโปรเจกต์ จึงไม่ต้องใช้ฐานข้อมูล ส่วนแอปที่นำมาแสดงเป็นผลงานมีโค้ดและระบบของตัวเองแยกต่างหาก
 
-## Featured work
+## ผลงานที่นำมาแสดง
 
-| Project | Overview | Source |
+| โปรเจกต์ | รายละเอียด | โค้ด |
 | --- | --- | --- |
-| Gaming Gear | Full-stack gaming equipment storefront | [Frontend](https://github.com/bosspa01/ecom-web) · [API](https://github.com/bosspa01/ecom-api) |
-| Solar AI | Solar-energy Q&A assistant using document retrieval | [Repository](https://github.com/bosspa01/solar-chat) |
-| Anime Buddy | Discord anime recommendation bot | [Fork](https://github.com/bosspa01/ai-anime-discord-bot) |
-| Voice to Clarity | LINE audio transcription and meeting summaries | [Fork](https://github.com/bosspa01/line-meeting-summarizer) |
-| Food Flow | Multi-role food ordering application | [Repository](https://github.com/bosspa01/FoodApp) |
+| Gaming Gear | เว็บขายอุปกรณ์เกมมิ่ง มีหน้าร้านและ API หลังบ้าน | [หน้าบ้าน](https://github.com/bosspa01/ecom-web) · [หลังบ้าน](https://github.com/bosspa01/ecom-api) |
+| Solar AI | แชตบอทถามตอบเรื่องพลังงานแสงอาทิตย์ โดยค้นข้อมูลจากเอกสาร | [ดูโค้ด](https://github.com/bosspa01/solar-chat) |
+| Anime Buddy | บอท Discord แนะนำอนิเมะ | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/ai-anime-discord-bot) |
+| Voice to Clarity | บอท LINE ถอดเสียงและสรุปการประชุม | [ดูโค้ดที่ Fork มา](https://github.com/bosspa01/line-meeting-summarizer) |
+| Food Flow | เว็บสั่งอาหารสำหรับลูกค้า ร้านค้า ไรเดอร์ และผู้ดูแลระบบ | [ดูโค้ด](https://github.com/bosspa01/FoodApp) |
 
-Forked projects are identified in the website and link to their upstream repositories. Screenshots show the featured projects; design artwork is labelled separately when no screenshot is configured.
+โปรเจกต์ที่ Fork มาจากผู้อื่นมีหมายเหตุและลิงก์ต้นฉบับในเว็บไซต์ ส่วนโปรเจกต์ที่ยังไม่ใส่ภาพหน้าจอจะใช้ภาพประกอบพร้อมข้อความกำกับ
 
-## Repository structure
+## โครงสร้างโปรเจกต์
 
 ```text
 frontend/
-  src/app/           Next.js page and root layout
-  src/components/    Sections, navigation, project gallery and contact form
-  src/data/          Profile, project details, translations and screenshot paths
-  src/styles/        Shared and section-specific stylesheets
-  public/            Profile images, favicon and project screenshots
-  scripts/           Optional screenshot capture utility
+  src/app/           หน้าแรกและโครงหน้าหลักของ Next.js
+  src/components/    ส่วนต่าง ๆ ของหน้า เมนู แกลเลอรี และฟอร์มติดต่อ
+  src/data/          ข้อมูลส่วนตัว ผลงาน คำแปล และรายการภาพหน้าจอ
+  src/styles/        CSS ส่วนกลางและของแต่ละส่วน
+  public/            รูปโปรไฟล์ ไอคอนเว็บ และภาพผลงาน
+  scripts/           สคริปต์จับภาพหน้าจอ
 backend/
-  server.js          Express application and middleware
-  routes/            Contact endpoint and rate limiter
-  controllers/       Contact request handling
-  config/            SMTP transport configuration
-  utils/             Input validation and HTML escaping
+  server.js          เปิด Express และตั้งค่าระบบรับคำขอ
+  routes/            เส้นทางฟอร์มติดต่อและการจำกัดความถี่
+  controllers/       จัดการข้อมูลติดต่อและส่งอีเมล
+  config/            ตั้งค่าการเชื่อมต่อ SMTP
+  utils/             ตรวจข้อมูลและแปลงอักขระสำหรับ HTML
 ```
 
-## Run locally
+## วิธีเปิดในเครื่อง
 
-Use **Node.js 24 LTS** and npm. Install dependencies separately in each application.
+ใช้ **Node.js 24 LTS** และ npm โดยติดตั้งแพ็กเกจของหน้าบ้านกับหลังบ้านแยกกัน
 
-**Backend — terminal 1**
+### 1. เปิดหลังบ้าน
+
+เปิด Terminal ในโฟลเดอร์โปรเจกต์ แล้วใช้คำสั่ง:
 
 ```powershell
 cd backend
 npm ci
-Copy-Item .env.example .env
-# Configure SMTP in .env before using the contact form.
+# คัดลอกเฉพาะกรณีที่ยังไม่มี .env เพื่อไม่ทับค่าที่ตั้งไว้เดิม
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+# ตั้งค่า SMTP ใน .env ก่อนใช้ฟอร์มส่งอีเมล
 npm run dev
 ```
 
-Only copy the example when you do not already have a local .env file.
+### 2. เปิดหน้าบ้าน
 
-**Frontend — terminal 2**
+เปิด Terminal อีกหน้าต่างในโฟลเดอร์โปรเจกต์ แล้วใช้คำสั่ง:
 
 ```powershell
 cd frontend
@@ -86,56 +86,64 @@ npm ci
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000). The API health endpoint is [localhost:4000/api/health](http://localhost:4000/api/health).
+เข้าเว็บไซต์ที่ [localhost:3000](http://localhost:3000) และตรวจว่าหลังบ้านทำงานที่ [localhost:4000/api/health](http://localhost:4000/api/health)
 
-For Windows, START_FRONTEND_WINDOWS.bat and START_BACKEND_WINDOWS.bat provide equivalent development launchers.
+สำหรับ Windows สามารถเปิดผ่าน `START_FRONTEND_WINDOWS.bat` และ `START_BACKEND_WINDOWS.bat` ได้เช่นกัน
 
-## Environment variables
+## ค่าที่ต้องตั้งในไฟล์ .env
 
-| Application | Variable | Purpose |
+| ส่วน | ตัวแปร | หน้าที่ |
 | --- | --- | --- |
-| Frontend | API_URL | Backend origin used by the Next.js /api rewrite; defaults to http://localhost:4000 locally |
-| Backend | PORT | HTTP port; use the hosting platform's assigned value |
-| Backend | FRONTEND_ORIGINS | Allowed frontend origins, separated by commas |
-| Backend | SMTP_HOST, SMTP_PORT, SMTP_SECURE | SMTP connection settings |
-| Backend | SMTP_USER, SMTP_PASS | SMTP credentials, stored only in local or hosting secrets |
-| Backend | CONTACT_TO_EMAIL | Destination for portfolio enquiries |
-| Backend | TRUST_PROXY | Set to 1 only behind one trusted reverse proxy |
+| หน้าบ้าน | `API_URL` | ที่อยู่หลังบ้านสำหรับส่งต่อ `/api` ค่าเริ่มต้นในเครื่องคือ `http://localhost:4000` |
+| หลังบ้าน | `PORT` | พอร์ตของเซิร์ฟเวอร์ เมื่อออนไลน์ใช้ค่าที่โฮสต์กำหนด |
+| หลังบ้าน | `FRONTEND_ORIGINS` | ที่อยู่หน้าบ้านที่อนุญาตให้เรียก API หลายค่าคั่นด้วย comma |
+| หลังบ้าน | `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE` | ตั้งค่าการเชื่อมต่อบริการส่งอีเมล |
+| หลังบ้าน | `SMTP_USER`, `SMTP_PASS` | บัญชีและรหัสสำหรับส่งอีเมล เก็บไว้เฉพาะในเครื่องหรือระบบเก็บค่าลับของโฮสต์ |
+| หลังบ้าน | `CONTACT_TO_EMAIL` | อีเมลปลายทางสำหรับรับข้อความ |
+| หลังบ้าน | `TRUST_PROXY` | ตั้งเป็น `1` เฉพาะเมื่ออยู่หลัง reverse proxy ที่เชื่อถือได้หนึ่งชั้น |
 
-The frontend sends requests to /api/contact; Next.js proxies them to the configured backend. Production must use an HTTPS backend origin instead of localhost. SMTP credentials belong exclusively on the backend.
+หน้าบ้านเรียก `/api/contact` แล้ว Next.js ส่งคำขอต่อไปยังหลังบ้าน เมื่อนำขึ้นออนไลน์ต้องตั้ง `API_URL` เป็นที่อยู่ HTTPS ของหลังบ้านจริง ส่วนค่ารหัส SMTP ตั้งเฉพาะหลังบ้าน ไม่ใส่ในโค้ดหน้าบ้านหรือ GitHub
 
-When SMTP is missing or delivery fails, the form reports the problem and offers direct email; it does not report a successful delivery.
+หากยังไม่ได้ตั้งค่า SMTP หรือส่งอีเมลไม่สำเร็จ ฟอร์มจะแจ้งปัญหาและมีลิงก์อีเมลให้ใช้แทน
 
-## Production checks
+## ตรวจสอบก่อนนำขึ้นออนไลน์
+
+รันในโฟลเดอร์หน้าบ้าน:
 
 ```powershell
 cd frontend
 npm ci
 npm run build
 npm start
-# In each app directory:
+```
+
+ตรวจช่องโหว่ของแพ็กเกจที่ใช้จริง โดยรันคำสั่งนี้แยกในโฟลเดอร์ `frontend` และ `backend`:
+
+```powershell
 npm audit --omit=dev
 ```
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for the proposed Vercel frontend / Render backend setup, environment configuration and release checks. Hosting resources and deployment are configured separately from pushing this repository.
+อ่าน [คู่มือนำเว็บขึ้นออนไลน์](DEPLOYMENT.md) สำหรับการตั้งค่าหน้าบ้านบน Vercel หลังบ้านบน Render และรายการตรวจสอบ การพุชโค้ดขึ้น GitHub กับการเผยแพร่เว็บเป็นคนละขั้นตอน
 
-## Content and screenshots
+## จุดที่แก้ข้อมูลและรูปภาพ
 
-- Edit personal details in frontend/src/data/profile.js.
-- Edit project descriptions in frontend/src/data/projects/.
-- Edit translations in frontend/src/data/languages/.
-- Place real screenshots under frontend/public/project-shots/ and list their public paths in frontend/src/data/project-shots.json.
-- Keep private conversations, credentials and personal account details out of published screenshots.
+- ข้อมูลส่วนตัว: `frontend/src/data/profile.js`
+- รายละเอียดผลงาน: `frontend/src/data/projects/`
+- ข้อความไทยและอังกฤษ: `frontend/src/data/languages/`
+- ภาพผลงานจริง: `frontend/public/project-shots/`
+- รายการภาพที่แสดงในเว็บ: `frontend/src/data/project-shots.json`
 
-## Documentation
+ก่อนเผยแพร่ภาพ ควรตรวจว่าไม่มีรหัสผ่าน ข้อมูลบัญชี หรือบทสนทนาส่วนตัวติดมาในภาพ
 
-- [Thai setup guide](README_TH.md)
-- [Beginner walkthrough](GUIDE_FOR_BEGINNERS_TH.md)
-- [Complete code and architecture guide](CODE_GUIDE_TH.md)
-- [Deployment guide](DEPLOYMENT.md)
+## เอกสารเพิ่มเติม
 
-## Author
+- [คู่มือติดตั้งและโครงสร้างเบื้องต้น](README_TH.md)
+- [คู่มือเริ่มอ่านโค้ด](GUIDE_FOR_BEGINNERS_TH.md)
+- [คำอธิบายโค้ดและโครงสร้างทุกส่วน](CODE_GUIDE_TH.md)
+- [คู่มือนำเว็บขึ้นออนไลน์](DEPLOYMENT.md)
 
-**Rapeephat Phaphan (Boss)** — [GitHub](https://github.com/bosspa01)
+## ผู้พัฒนา
 
-Source is provided for reviewing this portfolio. No open-source license is granted by this repository; project screenshots and third-party assets remain subject to their respective rights.
+**Rapeephat Phaphan (บอส)** — [GitHub](https://github.com/bosspa01)
+
+โค้ดเผยแพร่เพื่อให้ดูการทำงานของพอร์ตนี้ โดยยังไม่ได้กำหนดสัญญาอนุญาตแบบโอเพนซอร์ส ภาพผลงานและทรัพยากรจากภายนอกมีสิทธิ์ตามเจ้าของแต่ละรายการ
