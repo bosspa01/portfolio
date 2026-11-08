@@ -1,0 +1,137 @@
+/* GitHub-verified project gallery: only real screenshots configured in project-shots.json appear */
+.project-concept {
+  position: relative;
+}
+.project-concept .project-media-disclaimer {
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  z-index: 8;
+  max-width: 62%;
+  font: 500 10px var(--mono);
+  color: #dae5f6;
+  padding: 7px 9px;
+  background: rgba(3, 10, 23, 0.82);
+  border: 1px solid #3c5275;
+  text-align: right;
+}
+.project-shot-frame {
+  width: 100%;
+  position: relative;
+  height: 280px;
+  background: radial-gradient(circle at center, #18396c, #09111d);
+  overflow: hidden;
+}
+.project-shot-frame > img {
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+  height: 100%;
+}
+.project-featured .project-shot-frame {
+  height: 370px;
+}
+.project-art-button > .project-shot-frame {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.project-art-button:hover > .project-shot-frame {
+  transform: scale(1.045);
+}
+.dialog .project-concept .art,
+.dialog .project-shot-frame {
+  height: 290px;
+}
+.project-shot-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 17px;
+  font: 500 10px var(--mono);
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  color: #e1ebff;
+  background: #0b1225d6;
+  border: 1px solid #3c537e;
+}
+.project-shot-controls {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 5;
+  display: flex;
+  gap: 6px;
+}
+.project-shot-controls button {
+  padding: 9px 11px;
+  background: #061020db;
+  border: 1px solid #4b5e7c;
+  color: #c8d5e9;
+  font: 600 11px var(--mono);
+}
+.project-shot-controls button.active {
+  background: #3265d1;
+  color: white;
+  border-color: #76a7ff;
+}
+.project-repo-info {
+  margin-top: 26px;
+  padding-top: 19px;
+  border-top: 1px solid #2b3b55;
+  font: 500 11px/1.7 var(--mono);
+  color: #8fa5c6;
+}
+.project-repo-info p {
+  margin: 9px 0 0;
+  color: #abbcd5;
+}
+.project-repo-info strong {
+  color: #a9c4ff;
+}
+.project-repo-info a {
+  color: #a8cbff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 17px;
+}
+.project-links .dialog-link {
+  margin-top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
+  font: 600 11px var(--mono);
+}
+.project-links .btn-outline {
+  background: #0f192a;
+  border: 1px solid #41649c;
+  color: #eff5ff;
+}
+.project-links .btn-outline:hover {
+  background: #1e3660;
+}
+@media (max-width: 850px) {
+  .project-featured .project-shot-frame {
+    height: 310px;
+  }
+}
+@media (max-width: 650px) {
+  .project-shot-frame,
+  .project-featured .project-shot-frame {
+    height: 260px;
+  }
+  .dialog .project-concept .art,
+  .dialog .project-shot-frame {
+    height: 225px;
+  }
+  .project-links .dialog-link {
+    width: 100%;
+  }
+  .project-concept .project-media-disclaimer {
+    font-size: 8px;
+  }
+}

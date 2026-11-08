@@ -1,0 +1,69 @@
+/* journey */
+.journey-section {
+  border-bottom: 1px solid var(--stroke);
+}
+.journey-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 72px;
+}
+.journey-head .display-title {
+  font-size: clamp(70px, 8.2vw, 114px);
+}
+.journey-mark {
+  font-size: clamp(100px, 15vw, 220px);
+  line-height: 0.65;
+  color: #1d3c85;
+  animation: rotate-star 35s linear infinite;
+}
+.timeline {
+  border-top: 1px solid #293649;
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: 210px 40px 1fr 30px;
+  gap: 17px;
+  align-items: start;
+  padding: 33px 0;
+  border-bottom: 1px solid #293649;
+  transition:
+    padding 0.3s,
+    background 0.3s;
+}
+.timeline-item:hover {
+  padding-inline: 12px;
+  background: #0c1320;
+}
+.timeline-date {
+  font: 500 12px var(--mono);
+  color: #9badc8;
+  padding-top: 7px;
+}
+.timeline-node {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #7193d2;
+  border-radius: 50%;
+  margin-top: 9px;
+}
+.timeline-node.active {
+  background: #4d87fc;
+  box-shadow: 0 0 17px #427af0;
+}
+.timeline-item h3 {
+  font: 600 22px var(--body);
+  margin: 0 0 10px;
+  letter-spacing: -0.03em;
+}
+.timeline-item p {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 580px;
+  color: #8f9cb0;
+  margin: 0;
+}
+.timeline-item > svg {
+  color: #778cae;
+  margin-top: 5px;
+}

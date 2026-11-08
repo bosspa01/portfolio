@@ -1,0 +1,15 @@
+{
+  "gaming-store": [
+    "/project-shots/gaming-store/gaming-home.png",
+    "/project-shots/gaming-store/products.png",
+    "/project-shots/gaming-store/filter.png",
+    "/project-shots/gaming-store/carts.png",
+    "/project-shots/gaming-store/payment.png",
+    "/project-shots/gaming-store/history.png",
+    "/project-shots/gaming-store/admin.png"
+  ],
+  "solar-chatbot": ["/project-shots/solar-chatbot/chat.png"],
+  "anime-bot": ["/project-shots/anime-bot/AnimeBot.png"],
+  "meeting-summary": ["/project-shots/meeting-summary/meeting-summary.jpg"],
+  "food-app": ["/project-shots/food-app/menu.png"]
+}

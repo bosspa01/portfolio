@@ -1,0 +1,127 @@
+/* skills */
+.skills-section {
+  background: #0c111a;
+  border-block: 1px solid var(--stroke);
+  position: relative;
+}
+.skills-section::before {
+  position: absolute;
+  content: "";
+  width: 530px;
+  height: 530px;
+  top: 15%;
+  left: -140px;
+  background: radial-gradient(circle, #1d397d22, transparent 70%);
+  pointer-events: none;
+}
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 65px;
+}
+.skills-head {
+  align-self: start;
+}
+.skills-head .display-title {
+  font-size: clamp(64px, 7.2vw, 102px);
+}
+.skills-description {
+  color: #9ba6b5;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 33px 0;
+}
+.skills-compass {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #5688fe;
+  font-size: 63px;
+  margin-top: 80px;
+}
+.skills-compass span {
+  color: #7989a0;
+  font: 500 10px var(--mono);
+  letter-spacing: 0.1em;
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+.skill-card {
+  min-height: 282px;
+  border: 1px solid #2d384b;
+  background: linear-gradient(152deg, #141c2b, #0f1621);
+  padding: 24px 22px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+.skill-card:hover {
+  background: #17263e;
+  border-color: #5074bd;
+}
+.skill-card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -100px;
+  bottom: -100px;
+  border: 1px solid rgba(100, 155, 255, 0.18);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 30px rgba(100, 155, 255, 0.02),
+    0 0 0 80px rgba(100, 155, 255, 0.02);
+}
+.skill-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: #6585ad;
+  font: 500 9px var(--mono);
+}
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: #1c3159;
+  color: #93b3ff;
+  border: 1px solid #2d518b;
+}
+.skill-card h3 {
+  font: 700 22px var(--display);
+  letter-spacing: -0.03em;
+  margin: 30px 0 16px;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  position: relative;
+  z-index: 1;
+}
+.skill-tags span {
+  font-size: 11px;
+  padding: 6px 8px;
+  background: #1b2635;
+  border: 1px solid #2b394c;
+  color: #b8c5d6;
+}
+.skill-card-arrow {
+  position: absolute;
+  bottom: 14px;
+  right: 17px;
+  color: #536f9c;
+}
+.skills-footnote {
+  text-align: right;
+  margin: 19px 0 0;
+  color: #657286;
+  font-size: 11px;
+}

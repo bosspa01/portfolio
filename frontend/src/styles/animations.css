@@ -1,0 +1,55 @@
+/* motion */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+@keyframes float-main {
+  0%,
+  100% {
+    transform: rotateY(-11deg) rotateX(7deg) rotateZ(-4deg) translateY(0);
+  }
+  50% {
+    transform: rotateY(-9deg) rotateX(5deg) rotateZ(-3deg) translateY(-13px);
+  }
+}
+@keyframes float-side {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -10px;
+  }
+}
+@keyframes rotate-orbit {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes rotate-star {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes sun-pulse {
+  50% {
+    box-shadow:
+      0 0 26px 8px #f9aa4188,
+      0 0 100px 40px #ff9f1a4d;
+  }
+}
+@keyframes waveform {
+  50% {
+    transform: scaleY(0.46);
+  }
+}
